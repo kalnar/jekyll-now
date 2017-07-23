@@ -77,8 +77,15 @@ plugins_dir:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
+languages:          
+  - 'en'
+  - 'fr'
+  - 'hu'
+  - 'ru'
+
 # Exclude these files from your production _site
-exclude:
+exclude
+:
   - Gemfile
   - Gemfile.lock
   - LICENSE
@@ -86,4 +93,19 @@ exclude:
   - CNAME
 
 theme: minimal-mistakes-jekyll
+
+# Site settings
+title:
+  en: Your awesome title
+  fr: Votre titre génial
+email: your-email@domain.com
+index:
+  en:
+  fr: accueil.html
+  ru: index-ru.html
+  hu: index-hu.html
+feed:
+  en: /feed.xml
+  fr: /flux.xml
+url: "http://yourdomain.com" # the base hostname & protocol for your site
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang }}">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -11,6 +11,11 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}{% for post in posts %}
+    <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />{% endfor %}
+    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}{% for page in pages %}
+    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />{% endfor %}
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="{{ site.feed[page.lang] | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
@@ -27,8 +32,28 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <div id="nav-links">
+              <a href="{{ site.baseurl }}/">Blog</a>
+              <a href="{{ site.baseurl }}/about">About</a>
+            </div>
+            <row>
+              <ul id="language-selector-list">
+              {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+              {% for post in posts %}
+                <li>
+                  <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+                </li>
+              {% endfor %}
+
+              {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+              {% for page in pages %}
+                <li>
+                  <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+                </li>
+              {% endfor %}
+              </ul>
+            </row>
+
           </nav>
         </header>
       </div>

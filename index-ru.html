@@ -1,10 +1,11 @@
 ---
 layout: default
 ref: index
-lang: en
+lang: ru
 ---
 
-<div class="posts">
+<h1> артиклы </h1> 
+<div class="posts" lang="en">
   {% assign posts=site.posts | where:"lang", page.lang %}
   {% for post in posts %}
     <article class="post">
