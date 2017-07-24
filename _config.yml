@@ -84,8 +84,7 @@ languages:
   - 'ru'
 
 # Exclude these files from your production _site
-exclude
-:
+exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
