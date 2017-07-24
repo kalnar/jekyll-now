@@ -1,0 +1,22 @@
+
+.sidebar-right ul li {
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(238, 238, 238);
+}
+
+.sidebar-right ul {
+    margin: auto;
+    padding: initial;
+}
+
+.nav-bar-post-item {
+		color: #000000;
+    text-decoration: blink;
+}
+
+.post-list {
+		padding: 5px !important;
+}
