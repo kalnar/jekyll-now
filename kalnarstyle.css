@@ -7,7 +7,7 @@
     border-bottom-color: rgb(238, 238, 238);
 }
 
-.sidebar-right ul {
+.list-group ul {
     margin: auto;
     padding: initial;
 }
@@ -19,4 +19,10 @@
 
 .post-list {
 		padding: 5px !important;
+}
+
+
+@media (max-width: 992px) {
+	.left-nav, .right-nav {
+			display: none;
 }
