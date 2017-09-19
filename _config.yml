@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Robert Kalna
+name: kalnarblogs
 
 # Short bio or description (displayed in the header)
 description: just trying not to forget what I've already learnt 
@@ -19,7 +19,7 @@ avatar: https://lh3.googleusercontent.com/pVgd3mO-OpMNrlviTZSCK5_HQMkTxrvygkyBl2
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook: kalnus
   flickr:
   github: kalnar
   instagram:
@@ -27,9 +27,10 @@ footer-links:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/2847905/kalnar # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: +robertkalna # anything in your profile username that comes after plus.google.com/
+  patook: User/Name/krobert
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
