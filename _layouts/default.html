@@ -9,10 +9,11 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/agency.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/kalnarstyle.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/kalnarstyle.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/bootstrap-theme.min.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}{% for post in posts %}
     <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />{% endfor %}
@@ -24,30 +25,41 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container-fluid">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-8">
+    <div class="container-fluid" id="header-container">
+        <!--<div class="col-md-2">-->
+        <!--</div>-->
+        <div class="col-md-12">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <div>
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <div id="nav-links">
-              <a href="{{ site.baseurl }}/">Blog</a>
-              <a href="{{ site.baseurl }}/about">About</a>
+            <div class="site-info">
+              <h1 class="site-name"><a class="header-link" href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <p class="site-description header-text">{{ site.description }}</p>
             </div>
-            <row>
-              <ul id="language-selector-list">
+          </div>
+          <nav id="nav-bar">
+            <div class="col-md-12">
+            <div class="col-md-8">
+             
+            <h1 class="header-categories">
+              <a class="header-link header-categories" href="{{ site.baseurl }}/slice-of-life">slice of life</a>
+              <a class="header-link header-categories" href="{{ site.baseurl }}/it">it/dev</a>
+              <a class="header-link header-categories" href="{{ site.baseurl }}/archive">archive</a>
+            </h1>
+              <!--<a class="header-link" href="{{ site.baseurl }}/it">it/dev</a>-->
+            </div>
+          
+            <div id="nav-bar-right" class="col-md-4">
+            <div id="nav-links" class="row">
+              <a class="header-link" href="{{ site.baseurl }}/">Blog</a>
+              <a class="header-link" href="{{ site.baseurl }}/about">About</a>
+            </div>
+              <ul class="row" id="language-selector-list">
               {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
               {% for post in posts %}
                 <li>
-                  <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+                  <a href="{{ post.url }}" class="header-text {{ post.lang }}">{{ post.lang }}</a>
                 </li>
               {% endfor %}
 
@@ -58,49 +70,16 @@
                 </li>
               {% endfor %}
               </ul>
-            </row>
+          </div>
+          </div>
 
           </nav>
         </header>
       </div>
-      </div>
     </div>
 
     <div id="main" role="main" class="container-fluid">
-      <div class="col-md-2 left-nav">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i>Recent Posts</h3>
-            </div>
-            <div class="panel-body post-list">
-                <div class="list-group">
-                    {% assign posts=site.posts | where:"lang", page.lang %}
-                    {% for post in posts %}
-                    <a class="nav-bar-post-item list-group-item" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-8 col-xs-10">
       {{ content }}
-      </div>
-      <div class="col-md-2 col-xs-0 right-nav">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i>Categories</h3>
-            </div>
-            <div class="panel-body post-list">
-                <div class="list-group">
-										<ul id="language-selector-list">
-										<!--{% assign posts=site.posts | where:"lang", page.lang %}-->
-										<!--{% for post in posts %}-->
-										<!--<a class="nav-bar-post-item list-group-item" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>-->
-										<!--{% endfor %}-->
-                </div>
-            </div>
-        </div>
-      </div>
     </div>
 
     <div class="wrapper-footer">

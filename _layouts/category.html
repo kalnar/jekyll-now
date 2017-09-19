@@ -1,15 +1,13 @@
 ---
 layout: default
 ---
-
-<div class="col-md-2 left-nav">
-</div>
+{% include navigation-sidebar-left.html %}
 <div class="col-md-8 col-xs-10">
-<article class="page">
+  <article class="page">
   <h1>{{ page.title }}</h1>
 
   <div class="entry">
     {{ content }}
   </div>
-</article>
+  </article>
 </div>

@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% include navigation-sidebar-left.html %}
+<div class="col-md-8 col-xs-10">
 <article class="post">
   <h1>{{ page.title }}</h1>
 
@@ -15,3 +17,6 @@ layout: default
 
   {% include disqus.html %}
 </article>
+</div>
+{% include navigation-sidebar-right.html %}
+</div>
