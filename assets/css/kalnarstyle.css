@@ -125,3 +125,21 @@ p.ambitions {
   border-top-left-radius: 23px !important;
   border-top-right-radius: 23px !important;
 }
+
+.timeline-inverted {
+  height: 40px;
+}
+
+.timeline-panel {
+  padding: 0px;
+  margin: 4px;
+}
+
+.timeline > li {
+  margin-bottom: 75px;
+}
+
+.timeline-panel {
+  padding-top: 20px !important;
+}
+
