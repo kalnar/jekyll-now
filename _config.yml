@@ -92,7 +92,6 @@ exclude:
   - README.md
   - CNAME
 
-theme: minimal-mistakes-jekyll
 
 # Site settings
 title:
