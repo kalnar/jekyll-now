@@ -3,6 +3,7 @@ layout: post
 title: francais
 ref: hello
 lang: fr
+cat: slice
 ---
 
 
