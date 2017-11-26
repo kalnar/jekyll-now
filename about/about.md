@@ -30,7 +30,7 @@ lang: en
 <h4 class="subheading">MSc in <br>Computer Science</h4>
 </div>
 <div class="timeline-body">
-<p class="text-muted">Will be studying at <a href="https://www.univ-lyon1.fr/en/">University of Lyon 1</a> starting September</p>
+<p class="text-muted">Studying at <a href="https://www.univ-lyon1.fr/en/">University of Lyon 1</a> starting September</p>
 </div>
 </div>
 </li>
