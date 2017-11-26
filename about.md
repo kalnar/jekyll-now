@@ -99,7 +99,7 @@ So I am passionate about learning, getting to know a system which was unknown to
 </p>
 
 <p class="ambitions">
-Finally, I really want to live in Japan for a year or so. I have already been once, but I want the full experience, I want to explore japan, and talk to people there. 
+Finally, I really want to live in Japan for a year or so. I have already been there once, but I want the full experience, I want to explore japan, and talk to people there. 
 </p>
   </div>
   </div>
@@ -116,7 +116,7 @@ Finally, I really want to live in Japan for a year or so. I have already been on
 
 <h1 class="about-subtitle"> see when I am available</h1>
 
-<iframe src="https://calendar.google.com/calendar/embed?mode=WEEK&height=600&wkst=2&bgcolor=%23FFFFFF&src=kalnarobert%40gmail.com&color=%23AB8B00" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?mode=WEEK&height=600&wkst=2&bgcolor=%23FFFFFF&src=kalnarobert%40gmail.com&color=%23AB8B00&src=9hslc9chvt2gdr7qn2qloh5sk71b9klf%40import.calendar.google.com" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
 {% endraw %}
 
