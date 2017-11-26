@@ -1,18 +1,24 @@
 ---
-layout: default
+layout: page
+ref: index
+lang: en
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+  <h1 class="categories"> <a class="" href="{{ site.baseurl }}/slice-of-life">slice of life</a> </h1>
+  <h1 class="categories"> <a class="" href="{{ site.baseurl }}/it">it/dev</a> </h1>
+    <h1 class="categories"><a class="" href="{{ site.baseurl }}/archive">archive</a> </h1>
+  <!--{% assign posts=site.posts | where:"lang", page.lang %}-->
+  <!--{% for post in posts %}-->
+    <!--<article class="post">-->
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <!--<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>-->
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+      <!--<div class="entry">-->
+        <!--{{ post.excerpt }}-->
+      <!--</div>-->
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+      <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
+    <!--</article>-->
+  <!--{% endfor %}-->
 </div>

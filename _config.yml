@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Robert Kalna
+name: kalnarblogs
 
 # Short bio or description (displayed in the header)
 description: just trying not to forget what I've already learnt 
@@ -19,7 +19,7 @@ avatar: https://lh3.googleusercontent.com/pVgd3mO-OpMNrlviTZSCK5_HQMkTxrvygkyBl2
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook: kalnus
   flickr:
   github: kalnar
   instagram:
@@ -27,9 +27,10 @@ footer-links:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/2847905/kalnar # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: +robertkalna # anything in your profile username that comes after plus.google.com/
+  patook: User/Name/krobert
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
@@ -77,6 +78,12 @@ plugins_dir:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
+languages:          
+  - 'en'
+  - 'fr'
+  - 'hu'
+  - 'ru'
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
@@ -86,4 +93,19 @@ exclude:
   - CNAME
 
 theme: minimal-mistakes-jekyll
+
+# Site settings
+title:
+  en: Your awesome title
+  fr: Votre titre génial
+email: your-email@domain.com
+index:
+  en:
+  fr: accueil.html
+  ru: index-ru.html
+  hu: index-hu.html
+feed:
+  en: /feed.xml
+  fr: /flux.xml
+url: "http://yourdomain.com" # the base hostname & protocol for your site
 
