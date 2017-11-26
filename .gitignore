@@ -11,7 +11,7 @@ package.json
 
 run.local.sh
 
-.swp
+*.swp
 
 bootstrap-3.3.7-dist/
 bootstrap-sass-3.3.7/
