@@ -8,6 +8,7 @@ cat: it
 
 
 {% raw %}
+{% endraw %}
 
 <!--<svg viewBox="0 0 1800 1200" preserveAspectRatio="xMinYMin meet" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
 <!--<defs> <style type="text/css">-->
@@ -271,6 +272,8 @@ cat: it
 <!--</g>-->
 <!--</svg>-->
 
+
+{% raw %}
 {% endraw %}
 
 
