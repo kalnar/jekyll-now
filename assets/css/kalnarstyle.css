@@ -86,7 +86,8 @@ h1.post-title-h1 {
   float:right;
 }
 #nav-bar {
-  width: calc(100% - 420px);
+  /*width: calc(100% - 420px);*/
+  /*width: 100%;*/
 }
 
 #nav-bar-right  {
@@ -160,3 +161,19 @@ p.ambitions {
   padding-top: 20px !important;
 }
 
+@media screen and (max-width: 640px) {
+	.site-avatar {
+		float: none;
+		display: none;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 590px) {
+	.site-description.header-text {
+		display: none;
+	}
+}
+
+nav {
+	float:right;
+}
