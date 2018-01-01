@@ -173,6 +173,11 @@ p.ambitions {
 		display: none;
 	}
 }
+@media screen and (max-width: 540px) {
+	.site-name {
+    font-size: 20px;
+	}
+}
 
 nav {
 	float:right;
