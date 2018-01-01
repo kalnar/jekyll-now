@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Turing machine
-ref: turing-machine
+ref: turingmachine
 lang: en
 cat: it
 ---
