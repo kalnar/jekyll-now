@@ -91,6 +91,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - vendor
 
 
 # Site settings
