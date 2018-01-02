@@ -180,6 +180,12 @@ p.ambitions {
 	}
 }
 
+@media print {
+  #header-container {
+    display:none;
+  }
+}
+
 nav {
 	float:right;
 }
